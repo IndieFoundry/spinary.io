@@ -1,0 +1,19 @@
+{
+  "name": "Spinary - Assistant IA pour génération de contenu SEO",
+  "short_name": "Spinary",
+  "description": "Générez des milliers de contenus SEO uniques en masse sans duplication grâce à l'IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "fr-FR"
+}
