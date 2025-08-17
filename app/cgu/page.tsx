@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLeft, FileText, ShieldCheck, ScrollText } from "lucide-react";
+import { FileText, ShieldCheck, ScrollText } from "lucide-react";
 
 /**
  * Spinary – Conditions Générales d'Utilisation (CGU)
@@ -9,20 +9,6 @@ import { ArrowLeft, FileText, ShieldCheck, ScrollText } from "lucide-react";
  * Based on the actual Spinary.io CGU document
  */
 
-type CGUPageProps = {
-  onBack?: () => void;
-  lastUpdatedISO?: string; // e.g. "2025-08-10"
-  company?: {
-    name: string;
-    legalForm?: string;
-    website: string;
-    email: string;
-    address?: string;
-    phone?: string;
-    cityForJurisdiction?: string;
-    countryLaw?: string;
-  };
-};
 
 const defaultCompany = {
   name: "AnKT Services",
@@ -106,13 +92,9 @@ const InfoBadge: React.FC<{ label: string }> = ({ label }) => (
   </span>
 );
 
-const CGUPage: React.FC<CGUPageProps> = ({
-  onBack,
-  lastUpdatedISO,
-  company,
-}) => {
-  const c = { ...defaultCompany, ...(company || {}) };
-  const lastUpdated = formatDate(lastUpdatedISO);
+const CGUPage = () => {
+  const c = defaultCompany;
+  const lastUpdated = formatDate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -135,14 +117,6 @@ const CGUPage: React.FC<CGUPageProps> = ({
           <div className="flex items-center gap-2">
             <InfoBadge label="SaaS IA" />
             <InfoBadge label="Crédits" />
-            {onBack && (
-              <button
-                onClick={onBack}
-                className="hidden md:inline-flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                <ArrowLeft className="h-4 w-4" /> Retour
-              </button>
-            )}
           </div>
         </div>
       </header>

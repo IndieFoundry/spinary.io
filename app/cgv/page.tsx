@@ -1,20 +1,6 @@
-import { ArrowLeft, Receipt, ScrollText } from "lucide-react";
+import { Receipt, ScrollText } from "lucide-react";
 import React from "react";
 
-type CGVPageProps = {
-  onBack?: () => void;
-  lastUpdatedISO?: string;
-  company?: {
-    name: string;
-    legalForm?: string;
-    website: string;
-    email: string;
-    address?: string;
-    phone?: string;
-    cityForJurisdiction?: string;
-    countryLaw?: string;
-  };
-};
 
 const defaultCompany = {
   name: "AnKT Services",
@@ -95,13 +81,9 @@ const Bullet: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <li className="pl-2 text-gray-700 leading-relaxed mb-2">{children}</li>
 );
 
-const CGVPage: React.FC<CGVPageProps> = ({
-  onBack,
-  lastUpdatedISO,
-  company,
-}) => {
-  const c = { ...defaultCompany, ...(company || {}) };
-  const lastUpdated = formatDate(lastUpdatedISO);
+const CGVPage = () => {
+  const c = defaultCompany;
+  const lastUpdated = formatDate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -120,14 +102,6 @@ const CGVPage: React.FC<CGVPageProps> = ({
               </div>
             </div>
           </div>
-          {onBack && (
-            <button
-              onClick={onBack}
-              className="hidden md:inline-flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              <ArrowLeft className="h-4 w-4" /> Retour
-            </button>
-          )}
         </div>
       </header>
 

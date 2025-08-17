@@ -1,5 +1,4 @@
 import {
-  ArrowLeft,
   Cookie,
   Lock,
   ScrollText,
@@ -91,20 +90,6 @@ const InfoBox: React.FC<{
   );
 };
 
-export type PrivacyPolicyPageProps = {
-  onBack?: () => void;
-  lastUpdatedISO?: string;
-  company?: {
-    name: string;
-    legalForm?: string;
-    website: string;
-    email: string;
-    address?: string;
-    phone?: string;
-    cityForJurisdiction?: string;
-    countryLaw?: string;
-  };
-};
 
 const sectionsPrivacy = [
   {
@@ -174,13 +159,9 @@ const sectionsPrivacy = [
   },
 ];
 
-export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({
-  onBack,
-  lastUpdatedISO,
-  company,
-}) => {
-  const c = { ...defaultCompany, ...(company || {}) };
-  const lastUpdated = formatDate(lastUpdatedISO);
+const PrivacyPolicyPage = () => {
+  const c = defaultCompany;
+  const lastUpdated = formatDate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -200,14 +181,6 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({
               </div>
             </div>
           </div>
-          {onBack && (
-            <button
-              onClick={onBack}
-              className="hidden md:inline-flex items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              <ArrowLeft className="h-4 w-4" /> Retour
-            </button>
-          )}
         </div>
       </header>
 
@@ -648,3 +621,5 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({
     </div>
   );
 };
+
+export default PrivacyPolicyPage;
