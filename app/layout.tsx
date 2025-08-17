@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "Spinary - Générateur de contenus SEO uniques par IA | Zéro duplication",
   description:
-    "Créez des milliers de contenus SEO uniques avec Spinary. IA spécialisée, variables dynamiques, import CSV. Zéro duplication garantie.",
+    "Créez des milliers de contenus SEO uniques avec Spinary. IA spécialisée, variables dynamiques, import CSV. Zéro duplication.",
   icons: {
     icon: "/favicon.ico",
     apple: "/logo.png",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title:
       "Spinary - Générez des milliers de contenus SEO uniques sans duplication",
     description:
-      "L'assistant IA qui génère instantanément des milliers de contenus uniques optimisés SEO. Import CSV, variables dynamiques, score d'unicité 99,7%. Essai gratuit.",
+      "L'assistant IA qui génère instantanément des milliers de contenus uniques optimisés SEO. Import CSV, variables dynamiques, score d'unicité 99,7%. Créer un compte.",
     url: "https://spinary.io",
     siteName: "Spinary",
     locale: "fr_FR",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Spinary - Générez des milliers de contenus SEO uniques",
     description:
-      "Assistant IA pour générer des milliers de contenus SEO uniques en masse. Zéro duplication garantie. Essai gratuit.",
+      "Assistant IA pour générer des milliers de contenus SEO uniques en masse. Zéro duplication. Créer un compte.",
     images: ["https://spinary.io/twitter-image.jpg"],
     creator: "@spinary_io",
   },
@@ -130,7 +130,7 @@ const jsonLd = {
   potentialAction: {
     "@type": "ViewAction",
     target: "https://app.spinary.io/auth/signup",
-    name: "Essai gratuit",
+    name: "Créer un compte",
   },
   softwareRequirements:
     "Navigateur web moderne (Chrome, Firefox, Safari, Edge)",

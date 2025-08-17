@@ -43,40 +43,40 @@ export default function LandingPage() {
 
   const features = [
     {
-      icon: <MessageSquare className="w-8 h-8" />,
-      title: "Assistant IA SEO Expert",
+      icon: <Target className="w-8 h-8" />,
+      title: "Prompts optimisés SEO",
       description:
-        "Configuration guidée étape par étape. Plus besoin d'être expert en prompt engineering, l'IA comprend vos besoins métier et optimise automatiquement pour le SEO.",
+        "Templates pré-configurés pour titles, meta descriptions, H1, contenus. Intégration des mots-clés longue traîne et schema markup.",
     },
     {
       icon: <Shuffle className="w-8 h-8" />,
-      title: "Zéro duplication",
+      title: "Zéro pénalité Google",
       description:
-        "Évitez les pénalités Google, améliorez votre indexation. Chaque contenu est analysé avec notre algorithme de détection pour garantir 95%+ d'unicité.",
+        "Contenus 100% uniques pour éviter le duplicate content. Améliorez votre indexation et ranking.",
     },
     {
       icon: <TreePine className="w-8 h-8" />,
-      title: "Variables dynamiques illimitées",
+      title: "SEO local à grande échelle",
       description:
-        "Un seul prompt suffit pour générer des milliers de variations uniques. Personnalisez avec {{ville}}, {{produit}}, {{caractéristique}} et obtenez instantanément des contenus adaptés à chaque besoin.",
-    },
-    {
-      icon: <Upload className="w-8 h-8" />,
-      title: "Import/Export CSV en masse",
-      description:
-        "Importez vos données, générez, exportez. Compatible avec vos outils existants. Gagnez un temps précieux en automatisant la création de contenus.",
+        "Générez des pages localisées pour chaque ville {{ville}}, quartier {{quartier}}. Dominez les recherches locales sur Google.",
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "Score d'unicité temps réel",
+      title: "Fiches produits SEO",
       description:
-        "Contrôle automatique de chaque génération. Filtrage intelligent des contenus à régénérer. Dashboard de suivi de la qualité.",
+        "Créez des descriptions produits optimisées pour le e-commerce. Balises structurées, rich snippets, mots-clés ciblés.",
+    },
+    {
+      icon: <MessageSquare className="w-8 h-8" />,
+      title: "Contenus long-form SEO",
+      description:
+        "Générez des articles de 1000+ mots optimisés. Structure SEO parfaite : H2, H3, FAQ, maillage interne.",
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Performance entreprise",
+      title: "SEO programmatique",
       description:
-        "Génération ultra-rapide : 1000 contenus quelques minutes. Gagnez du temps et améliorez votre efficacité.",
+        "Générez 10 000 pages SEO en quelques minutes. Idéal pour marketplaces, annuaires, sites de contenu.",
     },
   ];
 
@@ -125,7 +125,7 @@ export default function LandingPage() {
                   href="https://app.spinary.io/auth/signup"
                   className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
-                  Essai gratuit
+                  Créer un compte
                 </Link>
               </div>
             </div>
@@ -153,11 +153,11 @@ export default function LandingPage() {
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Spinary, l&apos;assistant IA conçu pour le SEO : créez des
-                textes optimisés, prêts à publier, pour vos
+                Spinary, l'assistant IA conçu pour le SEO : créez des
                 <span className="font-semibold text-gray-800">
                   {" "}
-                  articles, fiches produits et pages locales.
+                  textes optimisés, prêts à publier, pour vos articles, fiches
+                  produits et pages locales.
                 </span>
               </p>
 
@@ -201,28 +201,34 @@ export default function LandingPage() {
                   <div className="space-y-3">
                     <div className="bg-white/80 backdrop-blur rounded-lg p-3 self-end max-w-xs ml-auto">
                       <p className="text-sm text-gray-800">
-                        Je veux créer des descriptions de produits uniques pour
-                        mon e-commerce
+                        J'ai un template de prompt avec des variables pour
+                        personnaliser chaque génération
                       </p>
                     </div>
 
                     <div className="bg-white rounded-lg p-3 shadow-sm border border-purple-200 max-w-md">
                       <p className="text-sm text-gray-800 mb-2">
                         <span className="font-semibold text-purple-600">
-                          🤖 Assistant:
-                        </span>{" "}
-                        Parfait ! Je vais vous aider à configurer votre
-                        génération. Voici ce que je vous propose :
+                          📝 Votre prompt personnalisé:
+                        </span>
                       </p>
                       <div className="bg-gray-50 p-2 rounded text-xs font-mono border border-gray-200">
                         <span className="text-gray-700">
-                          Créez une description SEO pour
+                          Crée une fiche produit SEO optimisée avec title, meta
+                          description et H1 pour
                         </span>{" "}
-                        <span className="text-indigo-700 font-semibold">{`{{produit}}`}</span>{" "}
-                        <span className="text-gray-700">dans</span>{" "}
-                        <span className="text-purple-700 font-semibold">{`{{categorie}}`}</span>{" "}
-                        <span className="text-gray-700">à</span>{" "}
-                        <span className="text-pink-700 font-semibold">{`{{ville}}`}</span>
+                        <span className="text-indigo-700 font-semibold">{`{{nom}}`}</span>{" "}
+                        <span className="text-gray-700">de</span>{" "}
+                        <span className="text-purple-700 font-semibold">{`{{marque}}`}</span>
+                        .<br />
+                        <span className="text-gray-700">
+                          Inclus les mots-clés longue traîne pour
+                        </span>{" "}
+                        <span className="text-pink-700 font-semibold">{`{{categorie}}`}</span>{" "}
+                        <span className="text-gray-700">
+                          et le schema markup pour
+                        </span>{" "}
+                        <span className="text-green-700 font-semibold">{`{{prix}}`}</span>
                       </div>
                     </div>
                   </div>
@@ -231,41 +237,41 @@ export default function LandingPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-6">
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg">
                     <div className="text-sm font-semibold text-gray-700 mb-3">
-                      📊 Import CSV :
+                      📊 Variables importées (CSV) :
                     </div>
                     <div className="space-y-2 text-sm font-mono">
                       <div className="bg-white p-2 rounded border text-gray-700">
-                        produit,categorie,ville
+                        nom | marque | categorie | prix | specs
                       </div>
                       <div className="bg-white p-2 rounded border text-gray-700">
-                        iPhone 15,Smartphones,Paris
+                        iPhone 15 | Apple | Smartphones | 999€ | 5G, 128GB
                       </div>
                       <div className="bg-white p-2 rounded border text-gray-700">
-                        MacBook Pro,Ordinateurs,Lyon
+                        Galaxy S24 | Samsung | Smartphones | 899€ | AI, 256GB
                       </div>
                       <div className="bg-white p-2 rounded border text-gray-700">
-                        AirPods,Audio,Marseille
+                        Pixel 8 | Google | Smartphones | 799€ | Photo AI
                       </div>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg">
                     <div className="text-sm font-semibold text-gray-700 mb-3">
-                      ✨ Contenus générés uniques :
+                      ✨ Contenus personnalisés générés :
                     </div>
                     <div className="space-y-2">
                       {[
                         {
                           score: "98%",
-                          text: "Découvrez l'iPhone 15, le smartphone révolutionnaire...",
+                          text: "L'iPhone 15 d'Apple dans la catégorie Smartphones...",
                         },
                         {
                           score: "97%",
-                          text: "Le MacBook Pro redéfinit la puissance portable...",
+                          text: "Le Galaxy S24 de Samsung redéfinit les Smartphones...",
                         },
                         {
                           score: "99%",
-                          text: "Les AirPods transforment votre expérience audio...",
+                          text: "Le Pixel 8 de Google transforme la catégorie Smartphones...",
                         },
                       ].map((item, index) => (
                         <div
@@ -273,7 +279,7 @@ export default function LandingPage() {
                           className="bg-white p-2 rounded border text-sm"
                         >
                           <span className="text-green-600 font-semibold mr-2">
-                            {item.score} unique
+                            ✓ {item.score} unique
                           </span>
                           <span className="text-gray-600">{item.text}</span>
                         </div>
@@ -286,7 +292,7 @@ export default function LandingPage() {
                   <div className="flex items-center gap-3">
                     <Zap className="w-5 h-5 text-green-600" />
                     <span className="text-green-700 font-semibold">
-                      1000 variations générées en 12 secondes
+                      1 prompt + 5000 variables = 5000 contenus uniques
                     </span>
                   </div>
                   <button className="text-green-600 hover:text-green-700 font-semibold flex items-center gap-1">
@@ -305,16 +311,16 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Comment
+              Génération de
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 {" "}
-                Spinary{" "}
+                contenus SEO{" "}
               </span>
-              fonctionne
+              en 3 étapes
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              3 étapes simples pour générer des milliers de contenus uniques
-              optimisés SEO
+              Créez des milliers de pages optimisées pour Google en quelques
+              minutes
             </p>
           </div>
 
@@ -322,24 +328,24 @@ export default function LandingPage() {
             {[
               {
                 step: "1",
-                icon: <MessageSquare className="w-8 h-8" />,
-                title: "Expliquez vos besoins",
+                icon: <Target className="w-8 h-8" />,
+                title: "Définissez votre stratégie SEO",
                 description:
-                  "L'assistant IA configure le prompt parfait pour votre secteur et vos objectifs SEO",
+                  "Créez un prompt optimisé avec mots-clés, structure H1/H2, meta descriptions",
               },
               {
                 step: "2",
                 icon: <Upload className="w-8 h-8" />,
-                title: "Importez vos données",
+                title: "Importez vos variables",
                 description:
-                  "CSV ou API, les variables sont détectées automatiquement (villes, produits, catégories)",
+                  "Uploadez votre CSV. Chaque colonne devient une variable utilisable dans votre prompt",
               },
               {
                 step: "3",
                 icon: <Sparkles className="w-8 h-8" />,
-                title: "Générez et exportez",
+                title: "Générez et publiez",
                 description:
-                  "Contenus uniques avec score d'unicité, prêts en moins de 30 secondes par lot",
+                  "Obtenez des milliers de pages SEO uniques, prêtes à indexer sur Google",
               },
             ].map((item, index) => (
               <div key={index} className="relative">
@@ -373,20 +379,18 @@ export default function LandingPage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <Wand2 className="w-4 h-4" />
-                Innovation exclusive
+                Assistant intégré
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                L&apos;assistant IA qui comprend
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Configuration simplifiée avec
                 <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   {" "}
-                  vraiment{" "}
+                  l&apos;assistant IA
                 </span>
-                le SEO
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Plus besoin d&apos;être un expert en prompt engineering. Notre
-                assistant conversationnel vous guide pas à pas pour configurer
-                des générations parfaites en quelques minutes.
+              <p className="text-lg text-gray-600 mb-8">
+                Besoin d&apos;aide ? Notre assistant IA optionnel vous guide
+                pour créer le template parfait pour vos générations en masse.
               </p>
 
               <div className="space-y-4">
@@ -396,11 +400,11 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      Comprend votre contexte métier
+                      Création de templates optimisés
                     </h4>
                     <p className="text-gray-600">
-                      L&apos;assistant analyse vos besoins spécifiques et adapte
-                      ses suggestions à votre industrie
+                      Génère des templates réutilisables pour vos générations
+                      futures
                     </p>
                   </div>
                 </div>
@@ -411,11 +415,11 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      Optimise automatiquement pour le SEO
+                      Détection automatique des variables
                     </h4>
                     <p className="text-gray-600">
-                      Intègre les meilleures pratiques SEO directement dans vos
-                      générations
+                      Analyse votre CSV et suggère les meilleures variables à
+                      utiliser
                     </p>
                   </div>
                 </div>
@@ -426,11 +430,11 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      Suggère les bonnes variables
+                      Configuration rapide
                     </h4>
                     <p className="text-gray-600">
-                      Identifie et propose les variables pertinentes pour
-                      maximiser vos variations
+                      Paramétrez vos générations en quelques clics sans
+                      expertise technique
                     </p>
                   </div>
                 </div>
@@ -524,15 +528,15 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Accélérez la production de votre contenu
+              Fonctionnalités
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 {" "}
-                SEO à grande échelle
+                SEO avancées
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Des fonctionnalités pensées pour les professionnels du SEO et du
-              e-commerce
+              Tout ce qu'il faut pour dominer Google avec du contenu unique à
+              grande échelle
             </p>
           </div>
 
@@ -561,23 +565,20 @@ export default function LandingPage() {
       <section className="py-20 bg-gradient-to-br from-indigo-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Prêt à révolutionner votre production de contenu SEO ?
+            Boostez votre SEO avec du contenu unique à grande échelle
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Rejoignez des milliers de professionnels qui génèrent déjà du
-            contenu unique à grande échelle avec Spinary
+            Dominez Google avec des milliers de pages optimisées. Zéro duplicate
+            content, 100% de contenus uniques
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="https://app.spinary.io/auth/signup"
               className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Commencer gratuitement
+              Commencer
             </Link>
           </div>
-          <p className="text-sm text-white/70 mt-6">
-            Pas de carte de crédit requise • 50 crédits offerts
-          </p>
         </div>
       </section>
 
@@ -589,7 +590,7 @@ export default function LandingPage() {
             {/* Logo and Description */}
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
                   <Image
                     src="/logo.png"
                     alt="Spinary"
@@ -601,8 +602,8 @@ export default function LandingPage() {
                 <h3 className="text-xl font-bold text-white">Spinary</h3>
               </div>
               <p className="text-gray-400 text-sm max-w-sm">
-                Générez des milliers de contenus SEO uniques en masse. Zéro
-                duplication, variables dynamiques, score d'unicité.
+                La plateforme SEO pour générer des milliers de contenus uniques.
+                Optimisé pour Google.
               </p>
             </div>
 
