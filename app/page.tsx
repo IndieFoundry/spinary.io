@@ -201,8 +201,7 @@ export default function LandingPage() {
                   <div className="space-y-3">
                     <div className="bg-white/80 backdrop-blur rounded-lg p-3 self-end max-w-xs ml-auto">
                       <p className="text-sm text-gray-800">
-                        J'ai un template de prompt avec des variables pour
-                        personnaliser chaque génération
+                        Créez des templates réutilisables avec vos variables personnalisées
                       </p>
                     </div>
 
