@@ -149,7 +149,7 @@ export default function LandingPage() {
                 <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                   contenus SEO uniques
                 </span>{" "}
-                sans duplication
+                en un clic
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -389,8 +389,8 @@ export default function LandingPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Besoin d&apos;aide ? Notre assistant IA optionnel vous guide
-                pour créer le template parfait pour vos générations en masse.
+                Besoin d&apos;aide ? Notre assistant IA vous guide pour créer le
+                template parfait pour vos générations en masse.
               </p>
 
               <div className="space-y-4">
