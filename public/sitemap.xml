@@ -14,7 +14,7 @@
   
   <!-- Pages légales -->
   <url>
-    <loc>https://spinary.io/terms</loc>
+    <loc>https://spinary.io/cgu</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -28,16 +28,10 @@
   </url>
   
   <url>
-    <loc>https://spinary.io/gcs</loc>
+    <loc>https://spinary.io/cgv</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
-  <url>
-    <loc>https://spinary.io/terms</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 </urlset>

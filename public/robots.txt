@@ -3,10 +3,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /dashboard/
-Disallow: /api/
-Disallow: /auth/reset-password
-Disallow: /auth/confirm-email
 
 # Sitemap
 Sitemap: https://spinary.io/sitemap.xml
@@ -32,7 +28,7 @@ User-agent: SemrushBot
 Disallow: /
 
 User-agent: AhrefsBot
-Disallow: /
+Allow: /
 
 User-agent: MJ12bot
 Disallow: /
