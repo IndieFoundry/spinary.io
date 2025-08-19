@@ -145,7 +145,7 @@ export default function LandingPage() {
               }`}
             >
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Générez des milliers de{" "}
+                L'IA génère des milliers de{" "}
                 <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                   contenus SEO uniques
                 </span>{" "}
@@ -183,56 +183,6 @@ export default function LandingPage() {
           >
             <div className="relative max-w-5xl mx-auto">
               <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-3 sm:p-8">
-                <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-3 sm:p-6 mb-3 sm:mb-6">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
-                      <Bot className="w-6 h-6 text-purple-600" />
-                    </div>
-                    <div className="flex-1">
-                      <div className="text-sm font-semibold text-purple-800">
-                        Assistant IA SEO
-                      </div>
-                      <div className="text-xs text-purple-600">
-                        En ligne • Prêt à vous aider
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="bg-white/80 backdrop-blur rounded-lg p-3 self-end max-w-xs ml-auto">
-                      <p className="text-sm text-gray-800">
-                        Créez des templates réutilisables avec vos variables personnalisées
-                      </p>
-                    </div>
-
-                    <div className="bg-white rounded-lg p-3 shadow-sm border border-purple-200 max-w-md">
-                      <p className="text-sm text-gray-800 mb-2">
-                        <span className="font-semibold text-purple-600">
-                          📝 Votre prompt personnalisé:
-                        </span>
-                      </p>
-                      <div className="bg-gray-50 p-2 rounded text-xs font-mono border border-gray-200">
-                        <span className="text-gray-700">
-                          Crée une fiche produit SEO optimisée avec title, meta
-                          description et H1 pour
-                        </span>{" "}
-                        <span className="text-indigo-700 font-semibold">{`{{nom}}`}</span>{" "}
-                        <span className="text-gray-700">de</span>{" "}
-                        <span className="text-purple-700 font-semibold">{`{{marque}}`}</span>
-                        .<br />
-                        <span className="text-gray-700">
-                          Inclus les mots-clés longue traîne pour
-                        </span>{" "}
-                        <span className="text-pink-700 font-semibold">{`{{categorie}}`}</span>{" "}
-                        <span className="text-gray-700">
-                          et le schema markup pour
-                        </span>{" "}
-                        <span className="text-green-700 font-semibold">{`{{prix}}`}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-6">
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg">
                     <div className="text-sm font-semibold text-gray-700 mb-3">
@@ -256,20 +206,20 @@ export default function LandingPage() {
 
                   <div className="bg-gray-50 p-3 sm:p-4 rounded-lg">
                     <div className="text-sm font-semibold text-gray-700 mb-3">
-                      ✨ Contenus personnalisés générés :
+                      🤖 Contenus générés par IA :
                     </div>
                     <div className="space-y-2">
                       {[
                         {
-                          score: "98%",
+                          score: "100%",
                           text: "L'iPhone 15 d'Apple dans la catégorie Smartphones...",
                         },
                         {
-                          score: "97%",
+                          score: "100%",
                           text: "Le Galaxy S24 de Samsung redéfinit les Smartphones...",
                         },
                         {
-                          score: "99%",
+                          score: "100%",
                           text: "Le Pixel 8 de Google transforme la catégorie Smartphones...",
                         },
                       ].map((item, index) => (
@@ -289,9 +239,9 @@ export default function LandingPage() {
 
                 <div className="flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border border-green-200">
                   <div className="flex items-center gap-3">
-                    <Zap className="w-5 h-5 text-green-600" />
+                    <Bot className="w-5 h-5 text-green-600" />
                     <span className="text-green-700 font-semibold">
-                      1 prompt + 5000 variables = 5000 contenus uniques
+                      IA génère 5000 contenus uniques à partir de vos données
                     </span>
                   </div>
                   <button className="text-green-600 hover:text-green-700 font-semibold flex items-center gap-1">
