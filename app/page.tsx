@@ -599,7 +599,7 @@ export default function LandingPage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tout ce qu'il faut pour dominer Google avec du contenu unique à
+              Tout ce qu'il faut pour dominer les moteurs de recherche et les réponses IA (ChatGPT, Claude, Gemini...) avec du contenu unique à
               grande échelle
             </p>
           </div>
