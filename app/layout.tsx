@@ -14,9 +14,14 @@ export const metadata: Metadata = {
   description:
     "Créez des milliers de contenus SEO uniques avec Spinary. IA spécialisée, variables dynamiques, import CSV. Zéro duplication.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/logo.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/favicons/apple-touch-icon.png",
   },
+  manifest: "/manifest.json",
   keywords:
     "génération contenu SEO, contenu unique masse, assistant IA SEO, zéro duplication, variables dynamiques, content spinning, génération automatique texte, SEO automation, fiches produits uniques, pages locales SEO",
   authors: [{ name: "Spinary" }],
