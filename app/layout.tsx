@@ -119,13 +119,6 @@ const jsonLd = {
       priceValidUntil: "2025-12-31",
     },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    ratingCount: "347",
-    bestRating: "5",
-    worstRating: "1",
-  },
   publisher: {
     "@type": "Organization",
     name: "Spinary SAS",
