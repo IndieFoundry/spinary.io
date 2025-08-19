@@ -4,8 +4,9 @@ import {
   ArrowRight,
   BarChart3,
   Bot,
-  Brain,
   Download,
+  FileText,
+  Globe,
   MessageSquare,
   Shuffle,
   Sparkles,
@@ -153,10 +154,10 @@ export default function LandingPage() {
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Spinary, l'assistant IA conçu pour le SEO : créez des
+                Spinary utilise l'IA générative pour créer des
                 <span className="font-semibold text-gray-800">
                   {" "}
-                  textes optimisés, prêts à publier, pour vos articles, fiches
+                  textes SEO optimisés, prêts à publier, pour vos articles, fiches
                   produits et pages locales.
                 </span>
               </p>
@@ -297,8 +298,8 @@ export default function LandingPage() {
                   "Obtenez des milliers de pages SEO uniques, prêtes à indexer sur Google",
               },
             ].map((item, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300">
+              <div key={index} className="relative h-full">
+                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                   <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                     {item.step}
                   </div>
@@ -308,10 +309,10 @@ export default function LandingPage() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600">{item.description}</p>
+                  <p className="text-gray-600 flex-grow">{item.description}</p>
                 </div>
                 {index < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                     <ArrowRight className="w-8 h-8 text-gray-300" />
                   </div>
                 )}
@@ -321,39 +322,51 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* AI Assistant Section */}
+      {/* Programmatic SEO Section */}
       <section className="py-20 bg-gradient-to-br from-purple-50 via-indigo-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <Wand2 className="w-4 h-4" />
-                Assistant intégré
+                SEO Programmatique
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Configuration simplifiée avec
+                Le SEO programmatique avec
                 <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   {" "}
-                  l&apos;assistant IA
+                  l&apos;IA générative
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Besoin d&apos;aide ? Notre assistant IA vous guide pour créer le
-                template parfait pour vos générations en masse.
+                L&apos;IA est très pertinente pour enrichir vos pages avec des données utiles et contextualisées. Créez des milliers de pages uniques enrichies automatiquement.
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <Brain className="w-5 h-5 text-purple-600" />
+                    <Globe className="w-5 h-5 text-purple-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      Création de templates optimisés
+                      Pages locales enrichies
                     </h4>
                     <p className="text-gray-600">
-                      Génère des templates réutilisables pour vos générations
-                      futures
+                      Génère automatiquement des descriptions uniques des quartiers, commerces et points d'intérêt pour chaque zone géographique
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <FileText className="w-5 h-5 text-purple-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Comparaisons produits
+                    </h4>
+                    <p className="text-gray-600">
+                      Crée des pages comparatives détaillées entre produits avec tableaux, avantages et recommandations personnalisées
                     </p>
                   </div>
                 </div>
@@ -364,26 +377,10 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      Détection automatique des variables
+                      Guides personnalisés
                     </h4>
                     <p className="text-gray-600">
-                      Analyse votre CSV et suggère les meilleures variables à
-                      utiliser
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <Sparkles className="w-5 h-5 text-purple-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Configuration rapide
-                    </h4>
-                    <p className="text-gray-600">
-                      Paramétrez vos générations en quelques clics sans
-                      expertise technique
+                      Rédige des guides adaptés à chaque métier et localisation avec conseils pratiques et informations pertinentes
                     </p>
                   </div>
                 </div>
@@ -399,70 +396,52 @@ export default function LandingPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-sm sm:text-base">
-                        Assistant SEO Expert
+                        Exemple : Enrichissement Local
                       </h3>
                       <p className="text-xs sm:text-sm text-purple-100">
-                        Je suis là pour vous aider
+                        L'IA ajoute de la valeur à vos pages
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="space-y-2 sm:space-y-3">
-                  <div className="bg-gray-100 rounded-lg p-2 sm:p-3 max-w-[85%] sm:max-w-[80%]">
-                    <p className="text-xs sm:text-sm text-gray-800">
-                      <span className="font-semibold">🤖 Assistant:</span>{" "}
-                      Bonjour ! Je suis votre assistant SEO. Quel type de
-                      contenu souhaitez-vous générer aujourd&apos;hui ?
-                    </p>
-                  </div>
-
-                  <div className="bg-indigo-100 rounded-lg p-2 sm:p-3 max-w-[75%] sm:max-w-[70%] ml-auto">
-                    <p className="text-xs sm:text-sm text-gray-800">
-                      Je veux créer des fiches produits pour mon e-commerce de
-                      mode
-                    </p>
-                  </div>
-
                   <div className="bg-gray-100 rounded-lg p-2 sm:p-3">
-                    <p className="text-xs sm:text-sm text-gray-800 mb-2 sm:mb-3">
-                      <span className="font-semibold">🤖 Assistant:</span>{" "}
-                      Excellent ! Pour des fiches produits mode optimisées SEO,
-                      je vous suggère cette configuration avec les variables
-                      adaptées :
+                    <p className="text-xs sm:text-sm text-gray-800 font-semibold mb-2">
+                      📝 Votre prompt avec variables :
                     </p>
-                    <div className="bg-white border border-gray-200 rounded p-2 sm:p-3 font-mono text-[10px] sm:text-xs">
-                      <p className="mb-1 sm:mb-2 text-gray-700">
-                        Créez une fiche produit SEO de 300 mots pour :
-                      </p>
+                    <div className="bg-white border border-gray-200 rounded p-2 font-mono text-[10px] sm:text-xs">
                       <p className="text-gray-700">
-                        • Produit :{" "}
-                        <span className="text-purple-600 font-bold">{`{{nom_produit}}`}</span>
-                      </p>
-                      <p className="text-gray-700">
-                        • Catégorie :{" "}
-                        <span className="text-indigo-600 font-bold">{`{{categorie}}`}</span>
-                      </p>
-                      <p className="text-gray-700">
-                        • Marque :{" "}
-                        <span className="text-pink-600 font-bold">{`{{marque}}`}</span>
-                      </p>
-                      <p className="text-gray-700">
-                        • Taille :{" "}
-                        <span className="text-green-600 font-bold">{`{{taille}}`}</span>
-                      </p>
-                      <p className="mt-1 sm:mt-2 text-gray-700">
-                        Incluez les bénéfices, caractéristiques et mots-clés
-                        longue traîne.
+                        "Écris un paragraphe sur les parcs à proximité de{" "}
+                        <span className="text-purple-600 font-bold">{`{{ville}}`}</span>{" "}
+                        <span className="text-indigo-600 font-bold">{`{{quartier}}`}</span>
+                        . Mentionne les espaces verts, les activités possibles et les points d'intérêt."
                       </p>
                     </div>
+                  </div>
+
+                  <div className="bg-indigo-100 rounded-lg p-2 sm:p-3">
+                    <p className="text-xs sm:text-sm text-gray-800 font-semibold mb-1">
+                      Variables CSV :
+                    </p>
+                    <p className="text-xs text-gray-700">
+                      ville: "Paris" | quartier: "14ème arrondissement"
+                    </p>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-2 sm:p-3">
+                    <p className="text-xs sm:text-sm text-gray-800 mb-2">
+                      <span className="font-semibold">✨ Résultat généré :</span>
+                    </p>
+                    <p className="text-xs text-gray-700 leading-relaxed">
+                      "Le 14ème arrondissement de Paris offre de magnifiques espaces verts pour se détendre. Le Parc Montsouris, véritable poumon vert de 15 hectares, propose des pelouses vallonnées, un lac artificiel et des aires de jeux pour enfants. À proximité, le Jardin du Luxembourg, bien qu'à la frontière avec le 6ème, reste facilement accessible pour les habitants du quartier. Pour les amateurs de nature, le Parc de Vincennes se trouve à seulement 20 minutes en métro, offrant son bois, son château et son zoo. Ces espaces permettent de pratiquer le jogging, les pique-niques en famille ou simplement de profiter d'un moment de calme au cœur de la capitale."
+                    </p>
                   </div>
 
                   <div className="flex items-center gap-2 text-[10px] sm:text-xs text-gray-500">
                     <Sparkles className="w-3 h-3" />
                     <span>
-                      L&apos;assistant a identifié 4 variables optimales pour
-                      votre cas
+                      Contenu 100% unique généré pour chaque combinaison ville/quartier
                     </span>
                   </div>
                 </div>
@@ -472,8 +451,144 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* More Examples Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Cas d'usage du
+              <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                {" "}
+                SEO programmatique
+              </span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              L'IA enrichit vos données avec du contenu pertinent et optimisé pour chaque cas
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Listing Example */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <TreePine className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Listings (Top de...)</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-xs font-mono text-gray-600">
+                    "Génère un tableau HTML comparatif de {`{{produit}}`} dans la catégorie {`{{categorie}}`}, place {`{{produit}}`} en 1ère colonne et mets en avant ses atouts"
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-xs text-gray-600">
+                    produit: "iPhone 15 Pro" | categorie: "smartphones premium"
+                  </p>
+                </div>
+                <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                  <p className="text-xs text-gray-700">
+                    ✓ Positionne chaque produit en 1er par rapport à ses concurrents dans vos listings
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* E-commerce Example */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center">
+                  <BarChart3 className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">E-commerce</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-xs font-mono text-gray-600">
+                    "Rédige les avantages de {`{{produit}}`} pour {`{{profil_client}}`}"
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-xs text-gray-600">
+                    produit: "Vélo électrique" | profil_client: "citadin actif"
+                  </p>
+                </div>
+                <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                  <p className="text-xs text-gray-700">
+                    ✓ Personnalise les fiches produits selon le profil client cible
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Services Example */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Services locaux</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-xs font-mono text-gray-600">
+                    "Explique pourquoi choisir un {`{{service}}`} local à {`{{ville}}`}"
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-xs text-gray-600">
+                    service: "plombier" | ville: "Marseille"
+                  </p>
+                </div>
+                <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                  <p className="text-xs text-gray-700">
+                    ✓ Crée des pages de services géolocalisées pour chaque ville
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tourism Example */}
+            <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-6 border border-orange-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
+                  <Globe className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Tourisme</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-xs font-mono text-gray-600">
+                    "Liste les attractions touristiques près de {`{{hotel}}`} à {`{{destination}}`}"
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-xs text-gray-600">
+                    hotel: "Hôtel du Louvre" | destination: "Paris 1er"
+                  </p>
+                </div>
+                <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                  <p className="text-xs text-gray-700">
+                    ✓ Enrichit les pages hôtels avec les attractions locales
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section id="features" className="py-20 bg-white scroll-mt-20">
+      <section id="features" className="py-20 bg-gray-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
