@@ -152,11 +152,13 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <Script
+        <script
           id="json-ld"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+          suppressHydrationWarning
+        >
+          {JSON.stringify(jsonLd)}
+        </script>
         <Script
           defer
           data-domain="spinary.io"
