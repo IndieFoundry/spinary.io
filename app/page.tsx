@@ -146,7 +146,7 @@ export default function LandingPage() {
               }`}
             >
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                L'IA génère des milliers de{" "}
+                Génèrez des milliers de{" "}
                 <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                   contenus SEO uniques
                 </span>{" "}
@@ -157,8 +157,8 @@ export default function LandingPage() {
                 Spinary utilise l'IA générative pour créer des
                 <span className="font-semibold text-gray-800">
                   {" "}
-                  textes SEO optimisés, prêts à publier, pour vos articles, fiches
-                  produits et pages locales.
+                  textes SEO optimisés, prêts à publier, pour vos articles,
+                  fiches produits et pages locales.
                 </span>
               </p>
 
@@ -269,8 +269,8 @@ export default function LandingPage() {
               en 3 étapes
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Créez des milliers de pages optimisées pour les moteurs de recherche en quelques
-              minutes
+              Créez des milliers de pages optimisées pour les moteurs de
+              recherche en quelques minutes
             </p>
           </div>
 
@@ -335,7 +335,8 @@ export default function LandingPage() {
               à grande échelle
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Spinary s'adresse aux experts qui gèrent des sites web avec des besoins de contenu massifs et uniques
+              Spinary s'adresse aux experts qui gèrent des sites web avec des
+              besoins de contenu massifs et uniques
             </p>
           </div>
 
@@ -410,7 +411,9 @@ export default function LandingPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                L&apos;IA est très pertinente pour enrichir vos pages avec des données utiles et contextualisées. Créez des milliers de pages uniques enrichies automatiquement.
+                L&apos;IA est très pertinente pour enrichir vos pages avec des
+                données utiles et contextualisées. Créez des milliers de pages
+                uniques enrichies automatiquement.
               </p>
 
               <div className="space-y-4">
@@ -423,7 +426,9 @@ export default function LandingPage() {
                       Pages locales enrichies
                     </h4>
                     <p className="text-gray-600">
-                      Génère automatiquement des descriptions uniques des quartiers, commerces et points d'intérêt pour chaque zone géographique
+                      Génère automatiquement des descriptions uniques des
+                      quartiers, commerces et points d'intérêt pour chaque zone
+                      géographique
                     </p>
                   </div>
                 </div>
@@ -437,7 +442,8 @@ export default function LandingPage() {
                       Comparaisons produits
                     </h4>
                     <p className="text-gray-600">
-                      Crée des pages comparatives détaillées entre produits avec tableaux, avantages et recommandations personnalisées
+                      Crée des pages comparatives détaillées entre produits avec
+                      tableaux, avantages et recommandations personnalisées
                     </p>
                   </div>
                 </div>
@@ -451,7 +457,8 @@ export default function LandingPage() {
                       Guides personnalisés
                     </h4>
                     <p className="text-gray-600">
-                      Rédige des guides adaptés à chaque métier et localisation avec conseils pratiques et informations pertinentes
+                      Rédige des guides adaptés à chaque métier et localisation
+                      avec conseils pratiques et informations pertinentes
                     </p>
                   </div>
                 </div>
@@ -486,7 +493,8 @@ export default function LandingPage() {
                         "Écris un paragraphe sur les parcs à proximité de{" "}
                         <span className="text-purple-600 font-bold">{`{{ville}}`}</span>{" "}
                         <span className="text-indigo-600 font-bold">{`{{quartier}}`}</span>
-                        . Mentionne les espaces verts, les activités possibles et les points d'intérêt."
+                        . Mentionne les espaces verts, les activités possibles
+                        et les points d'intérêt."
                       </p>
                     </div>
                   </div>
@@ -502,17 +510,31 @@ export default function LandingPage() {
 
                   <div className="bg-green-50 rounded-lg p-2 sm:p-3">
                     <p className="text-xs sm:text-sm text-gray-800 mb-2">
-                      <span className="font-semibold">✨ Résultat généré :</span>
+                      <span className="font-semibold">
+                        ✨ Résultat généré :
+                      </span>
                     </p>
                     <p className="text-xs text-gray-700 leading-relaxed">
-                      "Le 14ème arrondissement de Paris offre de magnifiques espaces verts pour se détendre. Le Parc Montsouris, véritable poumon vert de 15 hectares, propose des pelouses vallonnées, un lac artificiel et des aires de jeux pour enfants. À proximité, le Jardin du Luxembourg, bien qu'à la frontière avec le 6ème, reste facilement accessible pour les habitants du quartier. Pour les amateurs de nature, le Parc de Vincennes se trouve à seulement 20 minutes en métro, offrant son bois, son château et son zoo. Ces espaces permettent de pratiquer le jogging, les pique-niques en famille ou simplement de profiter d'un moment de calme au cœur de la capitale."
+                      "Le 14ème arrondissement de Paris offre de magnifiques
+                      espaces verts pour se détendre. Le Parc Montsouris,
+                      véritable poumon vert de 15 hectares, propose des pelouses
+                      vallonnées, un lac artificiel et des aires de jeux pour
+                      enfants. À proximité, le Jardin du Luxembourg, bien qu'à
+                      la frontière avec le 6ème, reste facilement accessible
+                      pour les habitants du quartier. Pour les amateurs de
+                      nature, le Parc de Vincennes se trouve à seulement 20
+                      minutes en métro, offrant son bois, son château et son
+                      zoo. Ces espaces permettent de pratiquer le jogging, les
+                      pique-niques en famille ou simplement de profiter d'un
+                      moment de calme au cœur de la capitale."
                     </p>
                   </div>
 
                   <div className="flex items-center gap-2 text-[10px] sm:text-xs text-gray-500">
                     <Sparkles className="w-3 h-3" />
                     <span>
-                      Contenu 100% unique généré pour chaque combinaison ville/quartier
+                      Contenu 100% unique généré pour chaque combinaison
+                      ville/quartier
                     </span>
                   </div>
                 </div>
@@ -534,7 +556,8 @@ export default function LandingPage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              L'IA enrichit vos données avec du contenu pertinent et optimisé pour chaque cas
+              L'IA enrichit vos données avec du contenu pertinent et optimisé
+              pour chaque cas
             </p>
           </div>
 
@@ -545,24 +568,33 @@ export default function LandingPage() {
                 <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
                   <TreePine className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Comparatifs & Classements</h3>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Comparatifs & Classements
+                </h3>
               </div>
               <div className="space-y-3">
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Prompt :
+                  </p>
                   <p className="text-xs font-mono text-gray-600">
-                    "Génère un tableau HTML comparatif de {`{{produit}}`} dans la catégorie {`{{categorie}}`}, place {`{{produit}}`} en 1ère colonne et mets en avant ses atouts"
+                    "Génère un tableau HTML comparatif de {`{{produit}}`} dans
+                    la catégorie {`{{categorie}}`}, place {`{{produit}}`} en
+                    1ère colonne et mets en avant ses atouts"
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Variables :
+                  </p>
                   <p className="text-xs text-gray-600">
                     produit: "iPhone 15 Pro" | categorie: "smartphones premium"
                   </p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                   <p className="text-xs text-gray-700">
-                    ✓ Positionne chaque produit en 1er par rapport à ses concurrents dans vos listings
+                    ✓ Positionne chaque produit en 1er par rapport à ses
+                    concurrents dans vos listings
                   </p>
                 </div>
               </div>
@@ -578,20 +610,26 @@ export default function LandingPage() {
               </div>
               <div className="space-y-3">
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Prompt :
+                  </p>
                   <p className="text-xs font-mono text-gray-600">
-                    "Rédige les avantages de {`{{produit}}`} pour {`{{profil_client}}`}"
+                    "Rédige les avantages de {`{{produit}}`} pour{" "}
+                    {`{{profil_client}}`}"
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Variables :
+                  </p>
                   <p className="text-xs text-gray-600">
                     produit: "Vélo électrique" | profil_client: "citadin actif"
                   </p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                   <p className="text-xs text-gray-700">
-                    ✓ Personnalise les fiches produits selon le profil client cible
+                    ✓ Personnalise les fiches produits selon le profil client
+                    cible
                   </p>
                 </div>
               </div>
@@ -603,17 +641,24 @@ export default function LandingPage() {
                 <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
                   <Target className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Services locaux</h3>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Services locaux
+                </h3>
               </div>
               <div className="space-y-3">
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Prompt :
+                  </p>
                   <p className="text-xs font-mono text-gray-600">
-                    "Explique pourquoi choisir un {`{{service}}`} local à {`{{ville}}`}"
+                    "Explique pourquoi choisir un {`{{service}}`} local à{" "}
+                    {`{{ville}}`}"
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Variables :
+                  </p>
                   <p className="text-xs text-gray-600">
                     service: "plombier" | ville: "Marseille"
                   </p>
@@ -636,13 +681,18 @@ export default function LandingPage() {
               </div>
               <div className="space-y-3">
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Prompt :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Prompt :
+                  </p>
                   <p className="text-xs font-mono text-gray-600">
-                    "Liste les attractions touristiques près de {`{{hotel}}`} à {`{{destination}}`}"
+                    "Liste les attractions touristiques près de {`{{hotel}}`} à{" "}
+                    {`{{destination}}`}"
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Variables :</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                    Variables :
+                  </p>
                   <p className="text-xs text-gray-600">
                     hotel: "Hôtel du Louvre" | destination: "Paris 1er"
                   </p>
@@ -670,7 +720,8 @@ export default function LandingPage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tout ce qu'il faut pour dominer les moteurs de recherche et les réponses IA (ChatGPT, Claude, Gemini...) avec du contenu unique à
+              Tout ce qu'il faut pour dominer les moteurs de recherche et les
+              réponses IA (ChatGPT, Claude, Gemini...) avec du contenu unique à
               grande échelle
             </p>
           </div>
@@ -703,8 +754,8 @@ export default function LandingPage() {
             Boostez votre SEO avec du contenu unique à grande échelle
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Dominez les moteurs de recherche avec des milliers de pages optimisées. Zéro duplicate
-            content, 100% de contenus uniques
+            Dominez les moteurs de recherche avec des milliers de pages
+            optimisées. Zéro duplicate content, 100% de contenus uniques
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
