@@ -51,7 +51,7 @@ export default function LandingPage() {
     },
     {
       icon: <Shuffle className="w-8 h-8" />,
-      title: "Zéro pénalité Google",
+      title: "Zéro pénalité moteurs de recherche",
       description:
         "Contenus 100% uniques pour éviter le duplicate content. Améliorez votre indexation et ranking.",
     },
@@ -59,7 +59,7 @@ export default function LandingPage() {
       icon: <TreePine className="w-8 h-8" />,
       title: "SEO local à grande échelle",
       description:
-        "Générez des pages localisées pour chaque ville {{ville}}, quartier {{quartier}}. Dominez les recherches locales sur Google.",
+        "Générez des pages localisées pour chaque ville {{ville}}, quartier {{quartier}}. Dominez les recherches locales et les réponses IA.",
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
@@ -269,7 +269,7 @@ export default function LandingPage() {
               en 3 étapes
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Créez des milliers de pages optimisées pour Google en quelques
+              Créez des milliers de pages optimisées pour les moteurs de recherche en quelques
               minutes
             </p>
           </div>
@@ -295,7 +295,7 @@ export default function LandingPage() {
                 icon: <Sparkles className="w-8 h-8" />,
                 title: "Générez et publiez",
                 description:
-                  "Obtenez des milliers de pages SEO uniques, prêtes à indexer sur Google",
+                  "Obtenez des milliers de pages SEO uniques, prêtes pour les moteurs de recherche et réponses IA",
               },
             ].map((item, index) => (
               <div key={index} className="relative h-full">
@@ -316,6 +316,77 @@ export default function LandingPage() {
                     <ArrowRight className="w-8 h-8 text-gray-300" />
                   </div>
                 )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience Section */}
+      <section id="target-audience" className="py-20 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Conçu pour les
+              <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                {" "}
+                professionnels du SEO{" "}
+              </span>
+              à grande échelle
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Spinary s'adresse aux experts qui gèrent des sites web avec des besoins de contenu massifs et uniques
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                icon: <Target className="w-8 h-8" />,
+                title: "Spécialistes SEO en agence",
+                description:
+                  "Gérez efficacement la création de contenus pour plusieurs clients et sites. Créez des milliers de pages optimisées sans duplication pour vos différents projets.",
+                highlight: "Agences digitales & Consultants SEO",
+              },
+              {
+                icon: <BarChart3 className="w-8 h-8" />,
+                title: "Responsables e-commerce",
+                description:
+                  "Générez des descriptions produits uniques pour des catalogues de centaines ou milliers d'articles.",
+                highlight: "Marketplaces & Sites e-commerce",
+              },
+              {
+                icon: <Globe className="w-8 h-8" />,
+                title: "Sites multi-localisation",
+                description:
+                  "Créez des pages locales uniques pour chaque ville, région ou point de service. Parfait pour les annuaires, services locaux et réseaux d'agences.",
+                highlight: "Annuaires & Services locaux",
+              },
+              {
+                icon: <FileText className="w-8 h-8" />,
+                title: "Créateurs de contenu à grande échelle",
+                description:
+                  "Produisez des milliers d'articles, pages catégories ou landing pages optimisées SEO. Augmentez votre visibilité sans compromettre la qualité.",
+                highlight: "Blogs & Sites de contenu",
+              },
+            ].map((item, index) => (
+              <div key={index} className="relative group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-indigo-300 hover:shadow-xl transition-all duration-300 h-full">
+                  <div className="absolute -top-3 left-8">
+                    <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      {item.highlight}
+                    </span>
+                  </div>
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -632,7 +703,7 @@ export default function LandingPage() {
             Boostez votre SEO avec du contenu unique à grande échelle
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Dominez Google avec des milliers de pages optimisées. Zéro duplicate
+            Dominez les moteurs de recherche avec des milliers de pages optimisées. Zéro duplicate
             content, 100% de contenus uniques
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -667,7 +738,7 @@ export default function LandingPage() {
               </div>
               <p className="text-gray-400 text-sm max-w-sm">
                 La plateforme SEO pour générer des milliers de contenus uniques.
-                Optimisé pour Google.
+                Optimisé pour les moteurs de recherche et les IA.
               </p>
             </div>
 

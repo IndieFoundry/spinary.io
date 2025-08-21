@@ -1,5 +1,22 @@
 import React from "react";
 import { FileText, ShieldCheck, ScrollText } from "lucide-react";
+import { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = {
+  title: "Conditions Générales d'Utilisation - Spinary",
+  description: "CGU de Spinary.io - Plateforme de génération de contenus SEO par IA. Conditions d'utilisation, crédits, responsabilités et droits.",
+  openGraph: {
+    title: "CGU - Conditions Générales d'Utilisation | Spinary",
+    description: "Consultez les conditions générales d'utilisation de la plateforme Spinary pour la génération de contenus SEO par intelligence artificielle.",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#6366f1",
+};
 
 /**
  * Spinary – Conditions Générales d'Utilisation (CGU)

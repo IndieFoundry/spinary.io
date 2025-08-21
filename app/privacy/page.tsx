@@ -11,6 +11,23 @@ import {
   FileText,
 } from "lucide-react";
 import React from "react";
+import { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = {
+  title: "Politique de Confidentialité - Spinary",
+  description: "Politique de confidentialité de Spinary.io - Protection des données personnelles, RGPD, cookies et droits des utilisateurs sur la plateforme de génération de contenus SEO.",
+  openGraph: {
+    title: "Politique de Confidentialité | Spinary",
+    description: "Découvrez comment Spinary protège vos données personnelles conformément au RGPD. Transparence sur la collecte, l'utilisation et la sécurité de vos données.",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#6366f1",
+};
 
 const defaultCompany = {
   name: "AnKT Services",

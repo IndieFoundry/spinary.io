@@ -1,6 +1,22 @@
 import { Receipt, ScrollText } from "lucide-react";
 import React from "react";
+import { Metadata, Viewport } from "next";
 
+export const metadata: Metadata = {
+  title: "Conditions Générales de Vente - Spinary",
+  description: "CGV de Spinary.io - Conditions de vente des crédits et services de génération de contenus SEO par IA. Prix, paiement, livraison et garanties.",
+  openGraph: {
+    title: "CGV - Conditions Générales de Vente | Spinary",
+    description: "Consultez les conditions générales de vente de Spinary pour l'achat de crédits et l'utilisation des services de génération de contenus par IA.",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#6366f1",
+};
 
 const defaultCompany = {
   name: "AnKT Services",
